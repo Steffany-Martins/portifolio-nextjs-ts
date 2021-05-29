@@ -5,7 +5,7 @@ import {GiTie} from 'react-icons/gi';
 const Sidebar = () => {
   return (
     <div>
-      <img src="https://i.ibb.co/ggD0Jmt/1598294564393.jpg" alt='user avatar' className="w-32 h-32 mx-auto border-4 border-green-400 border-dashed rounded-full hover:border-opacity-50"/>
+      <img src='https://i.ibb.co/yWkPJ5t/1598294564393.jpg' alt='user avatar' width={50} height={50} className="w-32 h-32 mx-auto border-4 border-green-400 border-dashed rounded-full hover:border-opacity-50"/>
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green">Steffany </span>
         Martins
