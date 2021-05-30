@@ -14,7 +14,7 @@ const Sidebar = () => {
       <a className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full" href="" download="name"><GiTie className="w-6 h-6"/>
       Download Resume</a>
       {/*social icon*/}
-      <div className="flex w-9/12 mx-auto my-10 text-green-500 justify-evenly md:w-full">
+      <div className="flex justify-center w-9/12 mx-auto my-10 space-x-5 text-green-500 md:w-full">
         <a href="https://github.com/Steffany-Martins" className="w-8 h-8 cursor-pointer hover:opacity-75">
           <Github size={30} />
         </a>

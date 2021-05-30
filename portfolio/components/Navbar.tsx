@@ -2,6 +2,8 @@ import {FunctionComponent,useState, useEffect} from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 
+//style
+const classContent = 'hover:border-green border-b-4 border-white';
 //custom tag
 const NavItem: FunctionComponent<{
   activeItem:string
@@ -11,17 +13,17 @@ const NavItem: FunctionComponent<{
   return activeItem !== name ? (
     <Link href={route}>
       <a>
-        <span onClick={() => setActiveItem(name)}>{name}</span>
+        <span className={classContent} onClick={() => setActiveItem(name)}>{name}</span>
       </a>
     </Link>
 
-    ):null
+    ): null
 }
 
 const Navbar = () => {
  
-const [activeItem, setActiveItem] = useState<string>("")
-const {pathname} = useRouter();
+  const {pathname} = useRouter();
+  const [activeItem, setActiveItem] = useState<string>("")
 
 
   useEffect(() => {
@@ -31,9 +33,9 @@ const {pathname} = useRouter();
 
   }, [])
   return (
-    <div>
-      <span className="font-bold text-green">{activeItem}</span>
-      <div className="flex text-red-400 text-red font-lg spacex-3">
+    <div className='flex justify-between px-5 py-3 my-3'>
+      <span className="text-xl font-bold border-b-4 cursor-pointer hover:opacity-50 text-green border-green md:text-2xl motion-safe:animate-bounce" >{activeItem}</span>
+      <div className="flex space-x-5 text-lg text-black-200">
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="About" route='/'/>
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Projects" route='/projects'/>
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Resume" route='/resume'/>
