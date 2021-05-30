@@ -5,7 +5,7 @@ import {GiTie} from 'react-icons/gi';
 const Sidebar = () => {
   return (
     <div>
-      <img src="https://i.ibb.co/ggD0Jmt/1598294564393.jpg" alt='user avatar' className="w-32 h-32 mx-auto border-4 border-green-400 border-dashed rounded-full hover:border-opacity-50"/>
+      <img src='https://i.ibb.co/yWkPJ5t/1598294564393.jpg' alt='user avatar' width={50} height={50} className="w-32 h-32 mx-auto border-4 border-green-400 border-dashed rounded-full hover:border-opacity-50"/>
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green">Steffany </span>
         Martins
@@ -14,7 +14,7 @@ const Sidebar = () => {
       <a className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full" href="" download="name"><GiTie className="w-6 h-6"/>
       Download Resume</a>
       {/*social icon*/}
-      <div className="flex w-9/12 mx-auto my-10 text-green-500 justify-evenly md:w-full">
+      <div className="flex justify-center w-9/12 mx-auto my-10 space-x-5 text-green-500 md:w-full">
         <a href="https://github.com/Steffany-Martins" className="w-8 h-8 cursor-pointer hover:opacity-75">
           <Github size={30} />
         </a>
