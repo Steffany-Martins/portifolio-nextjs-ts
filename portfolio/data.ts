@@ -2,11 +2,11 @@ import { RiComputerLine as Pc} from "react-icons/ri";
 import { FaServer as Server } from "react-icons/fa";
 import { AiOutlineAntDesign as Design, AiOutlineApi as Api } from "react-icons/ai";
 import { MdDeveloperMode as Dev } from "react-icons/md";
-import { IProject, Service, Skill } from "./type";
+import { IProject, IService, Skill } from "./type";
 
 import { BsCircleFill } from "react-icons/bs";
 
-export const services: Service[] = [
+export const services: IService[] = [
   {
     Icon: Pc,
     title: "Frontend Development",
@@ -47,28 +47,28 @@ export const services: Service[] = [
 export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Python",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Java Script",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React Native",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React",
+    name: "SASS",
     level: "70",
   },
   {
     Icon: BsCircleFill,
-    name: "Django",
+    name: "JavaScript",
+    level: "90",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "React Native",
+    level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "React",
     level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Java",
+    level: "50",
   },
   {
     Icon: BsCircleFill,
@@ -86,118 +86,69 @@ export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "Photoshop",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Illustrator",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Framer",
-    level: "45",
+    level: "70",
   },
 ];
 
 export const projects: IProject[] = [
   { 
-    name: "COVID Tracker",
+    name: "Weather App",
     description:
-      "This app shows a statistical view about corona virus over the world",
-    image_path: "/images/covid.jpg",
-    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
+      "This app shows the weather temperature in search city",
+    image_path: "/assets/projects/chrome-capture.gif",
+    deployed_url: "https://weather-app-full-pwa.netlify.app/",
+    github_url: "https://github.com/Steffany-Martins/PWA-weather",
     category: ["react"],
-    key_techs: ["React", "Chart.js", "Material UI"],
+    key_techs: ["React", "Api Weather", "Node.js"],
   },
   {
-    name: "Algorithm Visualizer",
-    image_path: "/images/algoVisual.png",
-    deployed_url: "https://visual-algorithm.web.app/",
-    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-    category: ["react"],
+    name: "Ecoleta",
+    image_path: "/assets/projects/ecoleta.png",
+    deployed_url: "https://steffany-martins.github.io/nlw-ecoleta/",
+    github_url: "https://github.com/Steffany-Martins/nlw-ecoleta",
+    category: ["react", "node", "express"],
     description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
+      "Ecoleta is a project developed based on international environment week...",
+    key_techs: ["Typescript", "Node.js", "React", "React Native", "Expo"],
   },
 
   {
-    name: "Dev Talks",
-    image_path: "/images/dev.jpg",
+    name: "Imersão Alura:KpopFlix",
+    image_path: "/assets/projects/kpop-flix.gif",
     deployed_url: "https://dev-talks.herokuapp.com/",
     github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node", "mongo", "react"],
-    description:
-      "Social Media app for developers who can share project,create posts,etc...",
-    key_techs: [
-      "React",
-      "Redux",
-      "Node",
-      "Express",
-      "Mongo",
-      "REST API",
-      "Bootstrap",
-    ],
-  },
-
-  {
-    name: "Realtime Chat App",
-    image_path: "/images/chatapp.jpg",
-    deployed_url: "https://sumit-chat.netlify.app/",
-    github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
     category: ["node", "react"],
     description:
-      "Basic Realtime Chat App where one can create a room can talk to each other",
-    key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
-  },
-
-  {
-    name: "Tweeter Clone",
-    image_path: "/images/tweetme.jpg",
-    deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-    github_url: "https://github.com/Dey-Sumit/tweetme",
-    category: ["django", "react"],
-    description:
-      "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-    key_techs: ["React", "Django", "Django REST API"],
-  },
-
-  {
-    name: "Color Classification using tf.js",
-    image_path: "/images/color.jpg",
-    deployed_url: "!#",
-    github_url: "https://github.com/Dey-Sumit/color-classification",
-    category: ["express"],
-    description:
-      "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-    key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
-  },
-  {
-    name: "YouTube using YouTube ",
-    image_path: "/images/youtubeClone.png",
-    deployed_url: "https://not-utube.web.app/",
-    github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
-    category: ["express"],
-    description:
-      'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
+      "The React Immersion project works on building a page that has functions similar to the Netflix website...",
     key_techs: [
       "React",
-      "Redux",
-      "Firebase Auth",
-      "YouTube API",
-      "Sass",
-      "Bootstrap",
+      "React-slick",
+      "Styled-Components",
+      "Json-server",
+      "Heroku",
     ],
   },
+
   {
-    name: "Football App",
-    image_path: "/images/football.png",
-    deployed_url: "https://o-my-goal.web.app/",
-    github_url: "https://github.com/Dey-Sumit/football-app",
-    category: ["react"],
+    name: "Snake Game",
+    image_path: "/assets/projects/snake-game.png",
+    deployed_url: "https://codepen.io/FannyMartins/pen/jOPYRMg",
+    github_url: "https://codepen.io/FannyMartins/pen/jOPYRMg",
+    category: ["NO-Framework"],
     description:
-      "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-    key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+      "The basic game snake with canvas",
+    key_techs: ["canvas", "css"],
   },
+
+  {
+    name: "A page with subjects and details",
+    image_path: "/assets/projects/react-rocketseat.gif",
+    deployed_url: "https://github.com/Steffany-Martins/reaact-rocketseat",
+    github_url: "https://github.com/Steffany-Martins/reaact-rocketseat",
+    category: [ "react"],
+    description:
+      "In this repository, you can see an axios request in Heroku Rocketseat 🚀 and a page with subjects about each items in the page.",
+    key_techs: ["React", "Node", "Heroku"],
+  },
+
 ];
