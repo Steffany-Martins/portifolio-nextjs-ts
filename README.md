@@ -5,7 +5,7 @@ My first portfolio!
 To run the project is necessary to run first:
 `yarn build`
 and after that: 
-`yarn start`
+`yarn dev` (client and server)
 
 This project was created with Tailwind| Next.js | Typescript and good practices with components in React.
 
